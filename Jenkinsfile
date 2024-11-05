@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Get some code from a GitHub repository
-                //git branch: 'main', url: 'https://github.com/jessieshannon16/lbg-hello-world-maven.git'
+                git branch: 'main', url: 'https://github.com/jessieshannon16/lbg-hello-world-maven.git'
  
                 // Run Maven on a Unix agent.
                 //sh "mvn -Dmaven.test.failure.ignore=true clean package"
